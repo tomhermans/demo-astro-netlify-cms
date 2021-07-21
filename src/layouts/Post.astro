@@ -4,7 +4,7 @@ import TagsList from '../components/TagsList.astro';
 import { machineDate, readableDate } from '../utils/dates';
 import { slug } from '../utils/slug';
 
-export interface Props {
+export let content: {
     date: string,
     summary: string,
     section: string,
@@ -12,10 +12,6 @@ export interface Props {
     description: string,
     tags: string[]
 }
-const { content } = Astro.props as Props;
-
-
-const { content } = Astro.props as Props;
 
 const authorUrl = `/author/${slug(content.author)}`;
 ---

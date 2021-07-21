@@ -15,7 +15,7 @@ export default {
   /** Options specific to `astro build` */
   buildOptions: {
     /** Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs. */
-    site: "https://astro-netlify-cms.netlify.app",
+    site: "https://astro-ntlcms.netlify.app/",
     /** Generate sitemap (set to "false" to disable) */
     sitemap: true,
   },
