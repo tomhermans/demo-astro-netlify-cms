@@ -1,11 +1,13 @@
 ---
 import Layout from './Base.astro';
 
-export let content: {
+export interface Props {
     description: string,
     section: string,
     title: string,
 }
+const { content } = Astro.props as Props;
+
 ---
 
 <Layout title={content.title} description={content.description} section={content.description}>
